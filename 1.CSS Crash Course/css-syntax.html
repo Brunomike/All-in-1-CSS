@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Syntax</title>
+    <style type="text/css">
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+      h1 {
+        font-size: 60px;
+      }
+      div,
+      p,
+      h1 {
+        background-color: #ddd;
+      }
+      div p {
+        /* Selects all paragraphs inside div's */
+        color: red;
+      }
+
+      div > p {
+        /*  Selects the paragraph where only div is the parent*/
+        display: inline;
+        color: yellowgreen;
+      }
+      div ~ p {
+        /*  Sibling selector ...all p after div */
+        color: orange;
+      }
+      div + p {
+        /*  Sibling selector ...after div*/
+        color: blue;
+      }
+      /* hex #AABBCC 
+        AA-For Red
+        BB-For Green
+        CC-For Blue
+        Each letter can have value from 0-9 or a-f
+
+        rgb-red,green,blue
+        0-255
+
+        rgba-red,green,blue,alpha(opacity)0-1
+
+      */
+
+      .likes {
+        border: 1px solid #333;
+        /* solid,double,dotted,groove,e74c3c */
+        border-radius: 2px;
+        outline: 5px dashed springgreen;
+      }
+      a:focus {
+        outline: 0;
+      }
+
+      .margin {
+        background-color: #333;
+        color: red;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        margin: 20px;
+        padding: 10px;
+        border: 5px solid red;
+      }
+      p {
+        width: 300px;
+        background-color: #ddd;
+        color: red;
+        text-indent: 100px;
+        letter-spacing: 2px;
+        word-spacing: 3 px;
+      }
+      .overflow{
+          width: 300px;
+          height: 300px;
+          background-color: green;
+          color: black;
+          overflow: auto;
+      }
+      
+      .one{
+          width: 200px;
+          height: 200px;
+          background-color: yellow;
+      }
+    
+      .two{
+          width: 200px;
+          height: 200px;
+          background-color: red;
+          float: left;          
+      }
+    
+      .three{
+          width: 200px;
+          height: 200px;
+          background-color: green;          
+          clear: left;
+      }
+      .three:hover{
+        box-shadow: 5px 5px 5px 5px #333 inset;
+        width: 200px;
+        height: 200px;
+        
+      }
+      .four{
+          width: 200px;
+          height: 200px;
+          background-color: blue;
+          float: left;
+          filter: Alpha(opacity=50);
+      }
+
+      .four:hover{
+          box-shadow: 5px 5px 5px 5px #333;
+          /* for browser compatibility add -webkit --moz prefixes */
+          /* h_value v_value blur spread color */
+      }
+      .like{
+          width: 400px;
+          font-size: 80px;
+          color: red;
+          font-weight: bold;
+          text-shadow: 3px 3px 3px  #333;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <h1>My name is John</h1>
+    <p class="like">I like orange</p>
+    <div>
+      <p>I am 20 years old</p>
+      <p>I am one</p>
+      <p>I am two</p>
+    </div>
+    <div class="likes">I like green</div>
+    <p>I am blue</p>
+    <p>I am red</p>
+    <a href="#">Click me</a>
+
+    <div class="margin">I like cream</div>
+    <div class="margin">I like cheese</div>
+
+    <div class="box"></div>
+    <p class="text">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, harum
+      officia distinctio iusto quibusdam beatae consequatur! Maxime in, fugit
+      accusantium laboriosam blanditiis provident similique eligendi et est at
+      sed culpa?
+    </p>
+    <div class="overflow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eveniet aperiam dolore hic officia suscipit alias fugiat similique distinctio, dignissimos eligendi voluptatibus quo enim! Architecto nostrum assumenda fugiat dolorem qui ut voluptatibus illo suscipit deserunt totam eum, voluptatem dicta. Molestias est doloribus doloremque nostrum dolore numquam omnis facilis autem maiores, aliquam dolorum exercitationem ab laboriosam qui quidem sapiente labore dolores accusamus, non assumenda fugit. Cum officiis ex facilis repellendus quam omnis suscipit nesciunt earum voluptatem voluptate! Debitis sint ut voluptate voluptas sequi iusto fugit accusamus ex magni maxime, dolor voluptatibus qui? Mollitia rem cupiditate sequi nulla unde? Sed neque quo ut recusandae vel possimus cum temporibus repudiandae enim, aliquam obcaecati, suscipit est! Veniam sunt, quo quae sed pariatur doloremque, expedita nihil, officiis impedit ratione accusantium nostrum perferendis possimus soluta unde minus tenetur similique deleniti maiores veritatis nesciunt earum quos velit! Molestiae, dolorum saepe? Modi, facilis veniam voluptate aliquid, voluptatibus earum quae ullam illum aperiam non facere optio dolorum quaerat ex, ab harum eligendi ipsum magnam perferendis! Veritatis, ea! Recusandae nemo expedita unde rerum itaque? Aut excepturi odit voluptates tenetur voluptas quasi pariatur, praesentium reiciendis repudiandae veniam, exercitationem consequatur laborum amet itaque illum autem cumque repellendus accusantium suscipit, quibusdam vitae? Blanditiis voluptatum commodi culpa repudiandae! Dolores esse voluptatibus, itaque nemo nostrum accusantium deleniti adipisci eaque unde accusamus ipsum ut cupiditate repudiandae veritatis in minima possimus similique culpa molestiae aliquam ab consequuntur magnam harum? Mollitia impedit placeat optio ipsum, itaque eius laborum aspernatur. Ipsam consectetur dolores at, nesciunt accusantium consequatur laborum, dolorem numquam tenetur repudiandae repellendus ipsa, labore voluptatem ex qui praesentium nostrum delectus vel excepturi minus molestias odio. Odit, laborum! Officiis labore molestiae perferendis magnam alias unde earum veniam quas, aliquam commodi aut exercitationem fugit nihil incidunt quia recusandae consequatur distinctio dolores quos debitis impedit aliquid consectetur nobis! Reprehenderit maxime odit id animi ut voluptas deserunt assumenda quae atque doloremque eveniet obcaecati consequuntur in facere ratione iste perferendis quam quo sed, perspiciatis officiis nobis ullam vero eum? Facere dolores et dicta ipsa expedita! Soluta accusantium ab architecto dolorum vitae repellat asperiores quisquam. Amet omnis sed eaque impedit nobis quos soluta nam suscipit? Quia, expedita. Reiciendis perspiciatis in explicabo expedita quae totam maxime nihil repellendus dignissimos est similique inventore, obcaecati nulla dolorem ratione voluptatem natus laudantium maiores vero quasi dolore recusandae exercitationem nesciunt? Blanditiis sequi nemo veniam ullam eos repellat voluptatum necessitatibus hic quisquam consequatur, eius voluptatem quidem voluptate optio architecto nam minima. Quae illum dolore dignissimos nesciunt molestiae eius quas iusto reprehenderit, pariatur magni nam nemo quibusdam velit sit. Magni magnam ex expedita asperiores reiciendis, corrupti, dicta neque sint mollitia odit eum, facere veniam labore inventore quibusdam excepturi. Nemo perspiciatis libero aliquid! Suscipit quisquam incidunt maxime distinctio inventore alias rem. Dolores, hic incidunt sed aliquid animi sit eum similique mollitia porro blanditiis adipisci dolore, corrupti error fugiat, repellendus eveniet voluptate nihil totam dolor odio? Magni, aliquam error molestiae quia itaque similique quasi tempora exercitationem voluptatibus adipisci vel, iure fugit officiis aspernatur quod obcaecati veniam, necessitatibus voluptas? Nesciunt quaerat rerum enim voluptatibus.
+    </div>
+    <br>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eaque consectetur corrupti quae pariatur cum deserunt, voluptatum, voluptate sapiente, dolorem nihil dolores placeat repudiandae optio soluta libero autem minus dignissimos?
+  </body>
+</html>
